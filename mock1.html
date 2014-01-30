@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <style>
+    .img-thumbnail:hover{
+      opacity: 0.6;
+    }
+
+    h1, h3, h5, h4, p{
+      font-family: 'Bree Serif', serif;
+      color: #2c3e50;
+      text-shadow: none;
+    }
+
+    .grid-item img{
+      width: 100px;
+      height: 100px;
+    }
+
+    .grid-item h4{
+      font-weight: normal;
+      font-size: 11px;
+    }
+
+
+    .grid-item{
+      width: 100px;
+      margin-right: 10px;
+      float: left;
+    }
+
+    .progress_labels{
+      padding-top: 35px;
+    }
+    .progress_labels div{
+      float: left;
+      text-align: center;
+      height: 100px;
+    }
+
+    </style>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="header_include" style='background-color: #252525'>
+        <div class="container" >
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="onboard.html"><span class="navbar-brand logo">Onboarding</span></a>
+         
+        </div>
+        <div class="collapse navbar-collapse" >
+          <ul class="nav navbar-nav">
+            <li><a href="mock1.html">Mock 1</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+  </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style='background-color: #ddd; margin-top: 40px'>
+      <div class="carousel-inner">
+        <div class="item active" style='background-color: #dfdfdf'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Welcome to <span style='color: #9b59b6'>LivingSocial</span></h1>
+              <p>Help us <span style='color: #9b59b6'>personalize</span> your experience by telling us a little about yourself!</p>
+              <div class="row">
+                <div class='col-md-4 col-md-offset-2'>
+                  <h3>Male</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='male' src='img/male.png' onclick="select(this,'female')" onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-4">
+                  <h3>Female</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='female' src='img/female.png' onclick="select(this,'male')" onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" style='background-color: #dfdfdf'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><br>What Are Some of Your Favorite Places?</h1>
+
+              <div class="row">
+              <div class="image-grid" style='text-align: center'>
+                <div class="grid-item"><h4>Pacific Heights</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/pacific_heights.png"></a></div>
+                <div class="grid-item"><h4>Alamo Square</SPAN></h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/alamo_square.png"></a></div>
+                <div class="grid-item"><h4>Buena Vista</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/buena_vista.png"></a></div>
+                <div class="grid-item"><h4>Castro</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/castro.png"></a></div>
+                <div class="grid-item"><h4>Cole Valley</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/cole_valley.png"></a></div>
+                <div class="grid-item"><h4>Fisherman's Wharf</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/fishermans_wharf.png"></a></div>
+                <div class="grid-item"><h4>Haight Ashbury</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/haight_ashbury.png"></a></div>
+                <div class="grid-item"><h4>Japantown</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/japantown.png"></a></div>
+                <div class="grid-item"><h4>The Mission</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/mission.png"></a></div>
+                <div class="grid-item"><h4>Nob Hill</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/nob_hill.png"></a></div>
+                <div class="grid-item"><h4>SOMA</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/soma.png"></a></div>
+                <div class="grid-item"><h4>Outer Sunset</h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/neighborhoods/outer_sunset.png"></a></div>
+              </div>
+              </div>
+
+              <div class='row' style='margin-top: 20px'>
+                <p><a href="#myCarousel" onclick="setbg(2)" role="button" data-slide="next" style='font-size: 13px'>Skip</a>&nbsp;&nbsp;
+                  <a class="btn btn-lg btn-success" href="#myCarousel" onclick="setbg(2)" data-slide="next" role="button">Next</a></p>
+              </div>
+            </div>
+          </div>
+          <a onclick="setbg(0)" class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div>
+        <div class="item" style='background-color: #dfdfdf'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1><br>What do you like to do?</h1>
+
+              <div class="row">
+              <div class="image-grid" style='text-align: center'>
+                <div class="grid-item"><h4>Burgers </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/burgers.png"></a></div>
+                <div class="grid-item"><h4>Candle Making </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/candle_making.png"></a></div>
+                <div class="grid-item"><h4>After Dark </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/after_dark.png"></a></div>
+                <div class="grid-item"><h4>Caving </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/caving.png"></a></div>
+                <div class="grid-item"><h4>Families </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/families.png"></a></div>
+                <div class="grid-item"><h4>Gardening </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/gardening.png"></a></div>
+                <div class="grid-item"><h4>Handball </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/handball.png"></a></div>
+                <div class="grid-item"><h4>Rowing </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/rowing.png"></a></div>
+                <div class="grid-item"><h4>Scuba </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/scuba.png"></a></div>
+                <div class="grid-item"><h4>Skydiving </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/skydiving.png"></a></div>
+                <div class="grid-item"><h4>Tigers </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/tiger.png"></a></div>
+                <div class="grid-item"><h4>RG3 </h4><a href="#"><img onclick=toggleimg(this) class="img-thumbnail" src="img/activities/watching_sports.png"></a></div>
+              </div>
+              </div>
+
+              <div class='row' style='margin-top: 20px'>
+                <p><a href="#myCarousel" onclick="setbg(2)" role="button" data-slide="next" style='font-size: 13px'>Skip</a>&nbsp;&nbsp;
+                  <a class="btn btn-lg btn-success" href="#myCarousel" onclick="setbg(3)" data-slide="next" role="button">Next</a></p>
+              </div>
+            </div>
+          </div>
+          <a onclick="setbg(1)" class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div>
+        <div class="item" style='background-color: #dfdfdf'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Tell us a little more about Yourself</h1>
+              <h3>Which of these characters best describes you!?</h3>
+              
+              <div class="row">
+                <div class='col-md-3'>
+                  <h3>Party Animal</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='personal1' src='img/party.png' onclick='personal(1)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>Wine & Cheese</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='personal2' src='img/wine.png' onclick='personal(2)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>Minivan Driver</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='personal3' src='img/minivan.png' onclick='personal(3)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>Sophisticated</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='personal4' src='img/old.png' onclick='personal(4)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a onclick="setbg(2)" class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div>
+        <div class="item" style='background-color: #dfdfdf'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Last thing! Almost There</h1>
+              <h3>How much should we contact you?</h3>
+              
+              <div class="row">
+                <div class='col-md-3'>
+                  <h3>All the Best Deals! I love LivingSocial</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='lastthing1' src='img/livingsocial.png' onclick='lastthing(1)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>A Deal a Day keeps the Doctor Away!</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='lastthing2' src='img/daily.png' onclick='lastthing(2)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>3 Digests per Week sounds right!</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='lastthing3' src='img/three.png' onclick='lastthing(3)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>&nbsp;<br>Weekly Digest<br>&nbsp;</h3>
+                  <a href="#myCarousel" data-slide="next"><img id='lastthing4' src='img/weekly.png' onclick='lastthing(4)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a onclick="setbg(3)" class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div>
+        <div class="item" style='background-color: #dfdfdf'>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Profile Complete! Thanks for Living<span style='color: #9b59b6'>Social</span></h1>
+              <h3>Here's what you can do next:</h3>
+              <div class="row">
+                <div class='col-md-3'>
+                  <h3>Shop Deals</h3>
+                  <a href="http://livingsocial.com/deals/"><img id='personal1' src='img/deals.png' onclick='personal(1)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>Find Friends</h3>
+                  <a href=""><img id='personal2' src='img/friends.png' onclick='personal(2)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>Manage Email</h3>
+                  <a href=""><img id='personal3' src='img/email.png' onclick='personal(3)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+                <div class="col-md-3">
+                  <h3>Get Lucky!</h3>
+                  <a href=""><img id='personal4' src='img/lucky.png' onclick='personal(4)' onmouseover='toggle(this,1)' onmouseout='toggle(this,2)' class="img-thumbnail" style='width: 200px; height: 200px'></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a onclick="setbg(4)" class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div id="progress" style='width: 1100px; height: 200px; background-color: red; margin: auto; margin-top: -40px; background: url(img/backgrounds/back0.png) '>
+
+    <div class='progress_labels'>
+      <div style='width: 175px;'>&nbsp</div>
+      <a onclick="setbg(0)" href="#myCarousel" data-slide-to="0"><div style='width: 150px;'>Gender</div></a>
+      <a onclick="setbg(1)" href="#myCarousel" data-slide-to="1"><div style='width: 150px;'>Favorite Places</div></a>
+      <a onclick="setbg(2)" href="#myCarousel" data-slide-to="2"><div style='width: 150px;'>Activities?</div></a>
+      <a onclick="setbg(3)" href="#myCarousel" data-slide-to="3"><div style='width: 150px;'>You!</div></a>
+      <a onclick="setbg(4)" href="#myCarousel" data-slide-to="4"><div style='width: 165px;'>Final Step</div></a>
+      <a onclick="setbg(5)" href="#myCarousel" data-slide-to="5"><div style='width: 160px;'>&nbsp</div></a>
+    </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/holder.js"></script>
+
+    <script>
+      function toggle(obj, i){
+
+        if(i==1){
+          var tmp = ($(obj).attr("src")).split(".");
+          var src = tmp[0] + "2." + tmp[1];
+          $(obj).attr("src", src);
+        }
+        if(i==2){
+          console.log(obj);
+          var tmp = ($(obj).attr("src")).split(".");
+          var src = tmp[0].substr(0,tmp[0].length-1) + "." + tmp[1];
+          $(obj).attr("src", src);
+        }
+      }
+
+      function toggleimg(obj){
+        if($(obj).css("background-color") == "rgb(255, 255, 255)"){
+          $(obj).css("background-color","#ffcc33");
+        }else{
+           $(obj).css("background-color","rgb(255, 255, 255)");
+        }
+      }
+
+      function select(obj, opt){
+
+        setbg(1);        
+
+        setTimeout( function() {
+        // code that must be executed after pause
+          $(obj).css("background-color","#ffcc33")
+          $(obj).css("border","1px solid #e67e22")
+
+          if(opt.length > 0){
+            $("#"+opt).css("background-color","")
+            $("#"+opt).css("border","")  
+          }      
+        }, 500 );
+
+      }
+
+      function personal(i){
+
+        setbg(4);
+
+        console.log(i);
+        setTimeout( function() {
+
+          for(var j=1; j<=4; j++){
+            if(j==i){
+              $("#personal"+j).css("background-color","#ffcc33")
+            }else{
+              $("#personal"+j).css("background-color","")
+            }
+          }
+                
+        }, 500 );
+      }
+
+      function lastthing(i){
+
+        setbg(5);
+
+        console.log(i);
+        setTimeout( function() {
+
+          for(var j=1; j<=4; j++){
+            if(j==i){
+              $("#lastthing"+j).css("background-color","#ffcc33")
+            }else{
+              $("#lastthing"+j).css("background-color","")
+            }
+          }
+                
+        }, 500 );
+      }
+
+      function setbg(i){
+        $("#progress").css("background","url(img/backgrounds/back"+i+".png)");
+      }
+
+    </script>
+  </body>
+</html>

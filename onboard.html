@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    .arrow{
+      background-color: #fff;
+      height: 500px;
+      min-height: 500px;
+      vertical-align: center;
+      text-align: center;
+      padding-top: 200px;
+    }
+    .arrow:hover{
+      background-color: #ddd;
+    }
+
+    .glyphicon-chevron-left, .glyphicon-chevron-right{
+      font-size: 48px;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="header_include" style='background-color: #252525'>
+        <div class="container" >
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="onboard.html"><span class="navbar-brand logo">Onboarding</span></a>
+         
+        </div>
+        <div class="collapse navbar-collapse" >
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Slideshow <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#DataCollection">Data Collection</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html">Mock 1</a></li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div>
+  </div>
+
+  <!--
+  SLIDE 1 - Introduction
+  -->
+    <div class="container fill" style='min-height: 778px'>
+    <div id="Introduction"><div style="height: 70px; width: 100px;"></div>
+    <div class="row">
+      <div class="col-xs-1">
+        <a href='#'><div class='arrow'><span class="glyphicon glyphicon-chevron-left"></span></div></a>
+      </div>
+      <div class="col-xs-7">
+        <h1>Onboarding</h1>
+          <blockquote>
+          <p>When you get it right, what happens is the boundry between trying out a product and using it disappears</p>
+          <small>Anonymous</small>
+          </blockquote>
+        <h4>The primary goal of the onboarding experience should be, in order</h4>
+        <ol>
+          <li>Inform Users about LivingSocial</li>
+          <li>Collect Key Data about Users to promote long term purchasing</li>
+          <li>Incentivize first purchase through new user signups</li>
+        </ol>
+
+        <h4>Secondary Goals</h4>
+        <ul>
+          <li>Connect with friends also on LivingSocial</li>
+          <li>Build LivingSocial Brand</li>
+          <li>Build product awareness</li>
+          <li>Less fake one-off email signups</li>
+        <ul>
+      </div>
+      <div class="col-xs-3">
+        <div class="thumbnail">
+          <img src="img/rave.png" alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-1">
+        <a href='#DataCollection'><div class='arrow'><span class="glyphicon glyphicon-chevron-right"></span></div></a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+<!--
+  SLIDE 1 - Introduction
+  -->
+    <div class="container fill" style='min-height: 778px'>
+    <div id="DataCollection"><div style="height: 70px; width: 100px;"></div>
+    <div class="row">
+      <div class="col-xs-1">
+        <a href='#'><div class='arrow'><span class="glyphicon glyphicon-chevron-left"></span></div></a>
+      </div>
+      <div class="col-xs-10">
+        <h1>Data Collection</h1>
+        <h4>Collecting data on our users is essential for generating immediate and long term revenue per customer</h4>
+
+        <ol>
+          <li><span class="glyphicon glyphicon-search">Demographiucs</span></li>
+          <li>Explicit Location Information: where is your house/work</li>
+          <li>Favorite Neighborhoods</li>
+        </ol>
+
+        <h4>Secondary Goals</h4>
+        <ul>
+          <li>Connect with friends also on LivingSocial</li>
+          <li>Build LivingSocial Brand</li>
+          <li>Build product awareness</li>
+          <li>Less fake one-off email signups</li>
+        <ul>
+      </div>
+      <div class="col-xs-1">
+        <a href='#DataCollection'><div class='arrow'><span class="glyphicon glyphicon-chevron-right"></span></div></a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash,
+            $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': ($target.offset().top)
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
+        
+      });
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
